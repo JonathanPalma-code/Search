@@ -1,9 +1,39 @@
-$bg-btn: blue;
+$bg-btn: #4780B6;
 
 .btn-submit {
   background-color: $bg-btn;
   color: white;
   font-size: 15px;
   padding: 10px;
-  margin: 20px;
+  margin: 5px;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: #3A668F;
+    transition: 1s;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.nav-bar {
+  text-align: right;
+
+  a {
+    margin: 5px;
+  }
+}
+
+.field {
+  border-radius: 20px;
+  padding: 5px;
+  outline: none;
+}
+
+footer{ 
+  position:absolute; 
+  bottom:0; 
+  height:20px; 
 }
