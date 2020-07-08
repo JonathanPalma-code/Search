@@ -1,3 +1,46 @@
+@media (min-width: 340px) {
+  label {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
+body {
+  background-color: #ccc;
+}
+
+.nav-bar {
+  text-align: right;
+}
+.nav-bar a {
+  margin: 5px;
+}
+
+label {
+  padding-top: 10px;
+}
+
+.field {
+  border: 1px solid;
+  border-radius: 20px;
+  outline: none;
+  font-size: 12px;
+  width: 250px;
+  height: 40px;
+}
+
+.text-box {
+  position: relative;
+}
+.text-box i {
+  position: absolute;
+  padding-left: 5px;
+  top: 10px;
+  color: #3C3C3C;
+}
+
 .btn-submit {
   background-color: #4780B6;
   color: white;
@@ -14,23 +57,10 @@
   outline: none;
 }
 
-.nav-bar {
-  text-align: right;
-}
-.nav-bar a {
-  margin: 5px;
-}
-
-.field {
-  border-radius: 20px;
-  padding: 5px;
-  outline: none;
-}
-
 footer {
   position: absolute;
   bottom: 0;
-  height: 25px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

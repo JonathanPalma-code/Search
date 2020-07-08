@@ -1,4 +1,52 @@
 $bg-btn: #4780B6;
+$bg: #ccc;
+$search: #3C3C3C;
+
+@media(min-width: 340px) {
+  label {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
+
+body {
+  background-color: $bg;
+}
+
+.nav-bar {
+  text-align: right;
+
+  a {
+    margin: 5px;
+  }
+}
+
+label {
+  padding-top: 10px;
+}
+
+.field {
+  border: 1px solid;
+  border-radius: 20px;
+  outline: none;
+  font-size: 12px;
+  width: 250px;
+  height: 40px;
+}
+
+.text-box {
+  position: relative;
+
+  i { 
+  position: absolute; 
+  padding-left: 5px;
+  top: 10px; 
+  color: $search;
+  }
+}
 
 .btn-submit {
   background-color: $bg-btn;
@@ -16,20 +64,6 @@ $bg-btn: #4780B6;
   &:focus {
     outline: none;
   }
-}
-
-.nav-bar {
-  text-align: right;
-
-  a {
-    margin: 5px;
-  }
-}
-
-.field {
-  border-radius: 20px;
-  padding: 5px;
-  outline: none;
 }
 
 footer{ 
