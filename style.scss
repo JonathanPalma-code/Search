@@ -1,24 +1,13 @@
 $bg-btn: #4780B6;
-$bg: #ccc;
-$search: #3C3C3C;
-
-@media(min-width: 340px) {
-  label {
-    font-size: 12px;
-  }
-
-  footer {
-    font-size: 10px;
-  }
-}
-
-body {
-  background-color: $bg;
-}
+$bg: rgb(194, 191, 191);
+$search: #A6A6B4;
+$shadow:
+    0 2px 5px 5px rgba(111, 104, 104, 0.1),
+    0 2px 5px 5px rgba(100, 100, 132, 0.1);
 
 .nav-bar {
   text-align: right;
-
+  
   a {
     margin: 5px;
   }
@@ -29,12 +18,17 @@ label {
 }
 
 .field {
-  border: 1px solid;
+  border: 1px solid lightgrey;
   border-radius: 20px;
   outline: none;
   font-size: 12px;
-  width: 280px;
+  width: 50%;
   height: 40px;
+
+  &:hover {
+    box-shadow: $shadow;
+    transition: 1s;
+  }
 }
 
 input[type=search] {
@@ -43,13 +37,17 @@ input[type=search] {
 
 .text-box {
   position: relative;
-
+  
   i { 
-  position: absolute; 
-  padding-left: 5px;
-  top: 12px; 
-  color: $search;
+    position: absolute; 
+    padding-left: 5px;
+    top: 12px; 
+    color: $search;
   }
+}
+
+label {
+  font-size: 15px;
 }
 
 .btn-submit {
@@ -60,19 +58,75 @@ input[type=search] {
   margin: 5px;
   border-radius: 20px;
   width: 150px;
-
+  
   &:hover {
     background-color: #3A668F;
     transition: 1s;
   }
-
+  
   &:focus {
     outline: none;
   }
 }
 
-footer{ 
+footer { 
   position:absolute; 
   bottom:0; 
   height:20px; 
+  font-size: 10px;
+}
+
+@media(max-width: 375px) {
+
+  label {
+    font-size: 12px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  input {
+
+    &[type=search] {
+      width: 100%;
+    }
+
+    &[type=submit] {
+      font-size: 12px;
+      width: 40%;
+    }
+  }
+}
+
+@media(min-width: 769px) {
+  
+  h5.description:after {
+    content: "To do this in the search box.";
+  }
+  
+  p {
+    font-size: 12px;
+
+    &.all-description:after {
+      content: "Type the important words: tri-colour rat terrier";
+    }
+    
+    &.exact-description:after {
+      content: 'Put exact words in quotes: "rat terrier"';
+    }
+
+    &.any-description:after {
+      content: "Type OR between all the words you want: miniature OR standard";
+    }
+
+    &.none-description:before {
+      content: 'Put a minus sign just before words that you don''t want:';
+    }
+
+    &.none-description:after {
+      display: block;
+      content: '-rodent, -"Jack Russell"';
+    }
+  }
 }

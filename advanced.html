@@ -8,7 +8,6 @@
   <link rel='stylesheet' href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body class='container-fluid'>
@@ -16,29 +15,46 @@
     <a href="./index.html">Search</a>
     <a href="./image.html">Image Search</a>
   </nav>
-  <header class='text-center pt-5 pb-5'>
-    <h1>Google</h1>
+  <header class='text-center pt-5 pb-3'>
+    <h1>
+      <span style='color: blue'>G</span>
+      <span style='color: red'>o</span>
+      <span style='color: yellow'>o</span>
+      <span style='color: blue'>g</span>
+      <span style='color: green'>l</span>
+      <span style='color: red'>e</span>
+    </h1>
     <h2>Advanced Search</h2>
   </header>
+  <hr />
   <main class='container-fluid'>
     <form action="https://google.com/search">
       <div class='main-content'>
-        <h4 class="pb-4">Find pages with...</h4>
+        <div class="row pt-3 pb-3">
+          <div class="col-12 col-lg-7">
+            <h4>Find pages with...</h4>
+          </div>
+            <h5 class="col-lg-5 description"></h5>
+        </div>
         <div class='row pt-1 pb-1'>
           <label class='col-6 col-lg-3'>all these words:</label>
           <input class='field col-6 col-lg-4' type="text" name="as_q">
+          <p class='all-description col-lg-5'></p>
         </div>
         <div class='row pt-1 pb-1'>
           <label class='col-6 col-lg-3'>this exact word or phrase:</label>
           <input class='field col-6 col-lg-4' type="text" name="as_epq">
+          <p class='exact-description col-lg-5'></p>
         </div>
         <div class='row pt-1 pb-1'>
           <label class='col-6 col-lg-3'>any of these words:</label>
           <input class='field col-6 col-lg-4' type="text" name="as_oq">
+          <p class='any-description col-lg-5'></p>
         </div>
         <div class='row pt-1 pb-1'>
           <label class='col-6 col-lg-3'>none of these words:</label>
           <input class='field col-6 col-lg-4' type="text" name="as_eq">
+          <p class='none-description col-lg-5'></p>
         </div>
         <div class="row pt-3">
           <input class='btn-submit' type="submit" value="Advanced Search">
